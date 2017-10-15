@@ -34,6 +34,8 @@ Para comprender mejor este libro, es conveniente conocer algo de:
 
 Todo el contenido de este libro esta bajo la licencia Creative Commons 4.0 Con reconocimiento-CompartirIgual Para ver una copia de la licencia puede hacerlo en la siguiente dirección [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 
+El código fuente que se muestra en este libro tiene licencia GPL-3.0; puede ver una copia de la licencia en la dirección: [https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
 ---
 
 ![Licencia de Creative Commons](https://i.creativecommons.org/l/by-sa/4.0/88x31.png) Licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a>.
