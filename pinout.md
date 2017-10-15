@@ -1,1 +1,1 @@
-![ESP32pinout](https://www.dfrobot.com/wiki/images/2/21/ESP32pinout.png)
+![ESP32pinout](http://esp32.net/images/Ai-Thinker/NodeMCU-32S/Ai-Thinker_NodeMCU-32S_DiagramPinout.png)
