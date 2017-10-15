@@ -27,7 +27,7 @@ Para comprender mejor este libro, es conveniente conocer algo de:
 * [Proyecto 10](#)
 * [Apéndice A: Instalación y Configuración de MicroPython en la placa ESP32](#)
 * [Apéndice B: Referencia de MicroPython para la ESP32](#)
-* [Apéndice C: Pinout de la ESP32](#)
+* [Apéndice C: Pinout de la ESP32](pinout.md)
 ---
 
 ## Licencia
