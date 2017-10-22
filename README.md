@@ -25,7 +25,7 @@ Para comprender mejor este libro, es conveniente conocer algo de:
 * [Proyecto 8: Control de Acceso](control-acceso.md)
 * [Proyecto 9: Medidor Energía](medidor-energia.md)
 * [Proyecto 10](#)
-* [Apéndice A: Instalación y Configuración de MicroPython en la placa ESP32](#)
+* [Apéndice A: Instalación y Configuración de MicroPython en la placa ESP32](instalacion.md)
 * [Apéndice B: Referencia de MicroPython para la ESP32](#)
 * [Apéndice C: Pinout de la ESP32](pinout.md)
 ---
