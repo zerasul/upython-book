@@ -29,6 +29,11 @@ Para comprender mejor este libro, es conveniente conocer algo de:
 * [Apéndice B: Referencia de MicroPython para la ESP32](#)
 * [Apéndice C: Pinout de la ESP32](pinout.md)
 ---
+## Como esta estructurado este libro
+
+Este libro pretende ser de ayuda a la hora de crear proyectos con electrónica libre de manera sencilla y por lo que se proveen de una serie de proyectos que pueden realizarse con una serie de recursos que se mostrarán al inicio de cada proyecto; e incluso se mostrarán esquemas con los que realizar los montajes de cada proyecto.
+
+Además de que se pretende tener este libro como consulta de manera que se mostrará en los apéndices al final como configurar e instalar MicroPython y la referencia de funciones comunes de este.
 
 ## Licencia
 
