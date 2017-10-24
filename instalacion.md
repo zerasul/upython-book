@@ -44,6 +44,9 @@ Una vez borrada la memoria del chip ya podemos flashear la imagen que hemos desc
 esptool.py --chip esp32 --port /dev/ttyUSB1 write_flash -z 0x1000 firmware-ESP32.bin
 ```
 
+![write-flash](write_flash.png)
+
+
 El comando anterior, flashea la imagen correspondiente a la placa con el ESP32 el cual necesita la imagen descargada y se indica que debe empezar por la dirección 0x1000 y el chip corresponde al esp32.
 
 Si por un casual requiere el uso de la ESP8266, se usará el siguiente comando.
@@ -52,4 +55,60 @@ Si por un casual requiere el uso de la ESP8266, se usará el siguiente comando.
 $ esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 esp8266-20170108-v1.9.2.bin
 ```
 El comando anterior puede dar un error de timeout; por lo que recomendamos en dicho caso usar una velocidad de 115200 baudios.
+
+## Conectar con la placa MicroPython
+
+Para poder conectar con nuestra placa micropython necesitaremos una consola con conexión serie. Por lo que en función de nuestro sistema Operativo, utilizaremos un programa u otro. Aunque existen varias alternativas, aquí mostramos una de ellas; en función del sistema Operativo.
+
+### Linux
+
+Para Sistemas Operativos _GNU/Linux_ se recomienda utilizar [_Picocom_](https://github.com/npat-efault/picocom) una aplicación de simulación de terminal. Aunque la recomendamos para Linux, también puede ser exportada para MacOsX o Windows.
+
+Para instalarlo, utilizaremos el gestor de paquetes de nuestra distribución (aunque puede ser instalada a través de los fuentes); por lo que por este caso lo instalaremos por gestor de paquetes.
+
+```
+$ sudo apt-get install picocom # Sistemas Debian
+$ sudo yum install picocom #Sistemas Red Hat
+```
+
+Una vez instalado, podemos usarlo a través del puerto serie correspondiente a nuestra placa; en este caso es el mismo que para la instalación de micropython.
+
+```
+$ pycon /dev/ttyUSB0 -b 115200
+```
+Como vemos en el comando anterior, tenemos un parámetro -b seguido de un número; esto indica la velocidad en baudios; por defecto puede ponerse a _115200_; pero dependiendo de la placa puede establecerse velocidades mayores.
+
+Seguidamente dejamos una serie de comandos que podemos utilizar para picocom.
+
+* <kbd>Control</kbd>-<kbd>a</kbd> <kbd>Control</kbd>-<kbd>x</kbd> SALIR
+* <kbd>Control</kbd>-<kbd>a</kbd> <kbd>Control</kbd>-<kbd>c</kbd> LOCAL ECHO
+* <kbd>Control</kbd>-<kbd>d</kbd> NODEMCU SOFT REBOOT
+
+El comando anterior, <kbd>Control</kbd>-<kbd>d</kbd> es compatible con todos los programas que veremos ya que este comando lo interpreta la placa como un reset a nivel Software.
+
+### MacOsX
+
+Para los Sistemas _MacOsX_ utilizaremos el comando que trae integrado [_Screen_](https://ss64.com/osx/screen.html) el cual nos permite crear una nueva consola con conexión a un puerto serie. Para ello ejecutamos el siguiente comando en una Terminal.
+
+```
+$ screen /dev/tty.wchusb1410 115200
+```
+Donde podemos ver que pasamos como parámetros la dirección del puerto y la velocidad en baudios; como para Linux, podemos aumentar la velocidad; pero dependerá de la placa que tengamos.
+
+Seguidamente se establecen algunos atajos de teclado para el comando screen.
+
+* <kbd>Control</kbd>-<kbd>a</kbd> <kbd>Control</kbd>-<kbd>k</kbd> - Termina la sesión serie.
+* <kbd>Control</kbd>-<kbd>a</kbd> <kbd>Control</kbd>-<kbd>]</kbd> - Pega el contenido del portapapeles.
+* <kbd>Control</kbd>-<kbd>c</kbd> -  Termina la ejecución actual.
+
+### Windows
+
+Para Sistemas Windows, podemos usar el conocido [Putty](http://www.putty.org); el cual nos descargaremos de su página oficial [http://www.putty.org](http://www.putty.org); y que simplemente configuraremos el puerto COM al que nos conectaremos y la velocidad tras seleccionar la opción de usar conexión serie.
+
+![putty_serial](https://github.com/pythoncanarias/upython/raw/master/imagenes/putty.jpg)
+
+Una vez conectados, ya tenemos acceso a MicroPython en el cual se nos muestra el Prompt de Python con los caracterí
+sticos _>>>_.
+
+## Conexión via Web. WEBREPL.
 
