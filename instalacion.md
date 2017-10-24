@@ -107,8 +107,25 @@ Para Sistemas Windows, podemos usar el conocido [Putty](http://www.putty.org); e
 
 ![putty_serial](https://github.com/pythoncanarias/upython/raw/master/imagenes/putty.jpg)
 
-Una vez conectados, ya tenemos acceso a MicroPython en el cual se nos muestra el Prompt de Python con los caracterí
-sticos _>>>_.
+Una vez conectados, ya tenemos acceso a MicroPython en el cual se nos muestra el Prompt de Python con los característicos ```>>>```.
 
-## Conexión via Web. WEBREPL.
 
+## Conexión via Web. WEBREPL
+
+Aunque esta sección aun no esta preparada para la _ESP32_, si que esta disponible para las placas _ESP8266_; por lo que es interesante comentar esta funcionalidad de poder programar utilizando una interfaz web en vez de una interfaz serie.
+
+Como hemos dicho en el parrafo anterior, esta funcionalidad no esta aún implementada en la ESP32 por lo que este apartado es solo para las placas ESP8266 o similares.
+
+En primer lugar, vamos a configurar el entorno y a activar dicha funcionalidad; por lo que importaremos el módulo ```webrepl_setup```; esto activara un asistente que nos perguntará si queremos añadir o no dicha funcionalidad. Pulsaremos la 'E' (Enabled) para activarla e introduciremos 2 veces una contraseña para poder acceder posteriormente.
+
+```
+import webrepl_setup
+(E)nable or (D)isable WebREPL
+>E
+introduce Password:
+re-introduce Password:
+```
+
+Una vez configurado, vamos a conectarnos a la siguiente dirección [http://micropython.org/webrepl](http://micropython.org/webrepl); la cual nos muestra una consola para poder conectarnos; sin embargo, tenemos que conectarnos via WIFI a nuestra ESP8266; por lo que usaremos la wifi que nos crea por defecto ( Si lo hemos cambiado nos conectaremos a dicha wifi) e introducimos la contraseña que por defecto es 'micropythoN'; una vez hecho esto ya podemos usar la consola WebREPL pulsando en el botón _connect_. Nos preguntará la contraseña y nos aparecerá el Prompt de Python ```>>>```.
+
+![webrepl](webrepl.png)
