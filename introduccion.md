@@ -22,6 +22,10 @@ MicroPython es una implementación ligera de lenguaje de programación Python en
 
 Existen implementaciones para distintas placas como puede ser la _pyboard_, _wipy_ y placas con el chip _ESPX_; como pueden ser la ESP8266 y la ESP32. Este libro se centra en la utilización de placas con el chip ESP32.
 
+Aunque tienen muchas similitudes entre la ESP32 y la ESP8266, la ESP32 esta aún en desarrollo y no tiene todas las funcionalidades que tiene la ESP8266; como por ejemplo la conexión por WEBREPL.
+
+Sin embargo, la ESP32 al tener un doble núcleo posee soporte para multiThreading; de forma que podemos crear hilos y hacer operaciones concurrentes. Esto se podrá ver en este libro.
+
 ## ESP32
 
 El ESP32 es un chip Soc(_System on a Chip_) de bajo coste y bajo consumo que tiene un procesador de doble núcleo con conectividad wifi y Bluetooth. Este chip permite con bajo coste crear proyectos del denominado Internet de las cosas ya que contiene una serie de funcionalidades como la conectividad Wifi, encriptación y comunicación con periféricos todos a nivel de Hardware.
