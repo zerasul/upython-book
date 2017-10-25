@@ -4,11 +4,11 @@ Este libro contiene información sobre la creación de 10 proyectos que se puede
 
 Todo el contenido que se expondrá en este libro esta dirigido a personas que por un lado quieran ampliar su conocimiento tanto de electrónica básica, tanto para personas que quieran aprender sobre el lenguaje de programación Python de forma que puedan usarlo con el denominado Hardware Libre.
 
-Todo el conocimiento que se expondrá en este libro, es libre por lo que puede usarse, copiarse y modificarse siempre que cumpla los terminos de la [licencia de uso](https://creativecommons.org/licenses/by-sa/4.0/); además como parte de la filosofía libre se aceptaran modificaciones y mejoras de este. 
+Todo el conocimiento que se expondrá en este libro, es libre por lo que puede usarse, copiarse y modificarse siempre que cumpla los términos de la [licencia de uso](https://creativecommons.org/licenses/by-sa/4.0/); además como parte de la filosofía libre se aceptaran modificaciones y mejoras de este. 
 
 Para comprender mejor este libro, es conveniente conocer algo de:
 
-* Trabajar con linea de comandos; ya que muchos de los pasos a realizar se hará uso de ello. Ya sea en entornos Windows, MacOsX o Linux, es importante haber trabajando anteriormente en entornos de consola de comandos.
+* Trabajar con línea de comandos; ya que muchos de los pasos a realizar se hará uso de ello. Ya sea en entornos Windows, MacOsX o Linux, es importante haber trabajado anteriormente en entornos de consola de comandos.
 * Conocer la sintaxis básica del lenguaje de programación Python; como uso de la implementación de MicroPython es necesario conocer este lenguaje de programación; al menos su sintaxis básica.
 * Conocer algunos conceptos de electrónica básica; Aunque como parte de este libro se muestran algunos conceptos básicos de esta siempre es recomendable estar familiarizados con ellos. 
 
