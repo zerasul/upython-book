@@ -26,7 +26,7 @@ Para comprender mejor este libro, es conveniente conocer algo de:
 * [Proyecto 9: Medidor Energía](medidor-energia.md)
 * [Proyecto 10](#)
 * [Apéndice A: Instalación y Configuración de MicroPython en la placa ESP32](instalacion.md)
-* [Apéndice B: Referencia de MicroPython para la ESP32](#)
+* [Apéndice B: Referencia de MicroPython para la ESP32](referencia.md)
 * [Apéndice C: Pinout de la ESP32](pinout.md)
 ---
 ## Como esta estructurado este libro
