@@ -7,3 +7,19 @@ Toda la referencia la veremos con respecto a su uso dentro de la electrónica b�
 entradas/salidas digitales y también veremos como poder comunicarnos con periféricos y por supuesto como utilizar la conectividad tanto de red,
 como de Bluetooth ya que la ESP32 trae soporte para los dos.
 
+## Entrada/Salida Digital
+
+## Entrada/Salida Analógica
+
+## Periféricos
+
+## Conectividad
+
+## Ahorro de energia
+
+## Concurrencia
+
+## módulos micropython
+
+## módulos especificos
+
