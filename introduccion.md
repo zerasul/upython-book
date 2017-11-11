@@ -26,12 +26,17 @@ Aunque tienen muchas similitudes entre la ESP32 y la ESP8266, la ESP32 esta aún
 
 Sin embargo, la ESP32 al tener un doble núcleo posee soporte para multiThreading; de forma que podemos crear hilos y hacer operaciones concurrentes. Esto se podrá ver en este libro.
 
+Además, para ayudar al lector si no se tiene una ESP32, en muchos casos mostramos sentencias equivalentes para los chips ESP8266 de forma que sea totalmente compatible.
+
 ## ESP32
 
 El ESP32 es un chip Soc(_System on a Chip_) de bajo coste y bajo consumo que tiene un procesador de doble núcleo con conectividad wifi y Bluetooth. Este chip permite con bajo coste crear proyectos del denominado Internet de las cosas ya que contiene una serie de funcionalidades como la conectividad Wifi, encriptación y comunicación con periféricos todos a nivel de Hardware.
 
 Con su bajo coste ya que no suele costar más de 20 euros y que contiene una memoria de hasta 4MB nos permitirá utilizarlos en los proyectos con Micropython.
 
+Hay que tener en cuenta la placa que usaremos como referencia para este libro en la cual tiene instalado el microcontrolador ESP32. En este libro vamos a utilizar como referencia la placa NodeMcu.
+
 Seguidamente mostramos el diagrama de funcionalidades del chip ESP32.
+
 
 ![ESP32functionalDiagram](http://esp32.net/images/_resources/ESP32_Function_Block_Diagram.svg)
