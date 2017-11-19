@@ -68,11 +68,11 @@ Hemos visto como se realiza las operaciones con las entradas o salidas digitales
 
 Estas entradas permiten leer o escribir valores distintos de 0 o 1. En micropython se pueden utilizar estas entradas o salidas anlógicas.
 
-Es importante conocer como funciona la lectura analógica; ya que el microcontrolador como puede ser el ESP32, utiliza lógica binaria; por lo que es necesario algun mecanismo para poder trabajar con la lógica analógica. Es por esto que el microcontrolador tiene un dispositivo llamado ADC(Analog digital Converter) el cual permite transformar de un valor analógico a un valor digital. Esto se realiza realizando una división en niveles de distintos voltajes entre el 0 y el 1. (entre 0 y 3.3V).
+Es importante conocer como funciona la lectura analógica; ya que el microcontrolador como puede ser el ESP32, utiliza lógica binaria; por lo que es necesario algún mecanismo para poder trabajar con la lógica analógica. Es por esto que el microcontrolador tiene un dispositivo llamado ADC(Analog digital Converter) el cual permite transformar de un valor analógico a un valor digital. Esto se realiza realizando una división en niveles de distintos voltajes entre el 0 y el 1. (entre 0 y 3.3V).
 
 En la placa NodeMCU podemos ver que para el modelo con la ESP32, tiene varias entradas analógicas; esto lo podemos ver en su pinout; que puede encontrarse al final de este libro.
 
-En micropython, para usar la lectura analógica, usaremos la clase ```ADC``` del modulo ```machine```. Esta clase nos permitira leer un valor de entre 0 y 1023; ya que la precisión del conversor ADC de la placa es de 10 bits.
+En micropython, para usar la lectura analógica, usaremos la clase ```ADC``` del modulo ```machine```. Esta clase nos permitirá leer un valor de entre 0 y 1023; ya que la precisión del conversor ADC de la placa es de 10 bits.
 
 ```python
 from machine import ADC
@@ -88,11 +88,11 @@ ADC adc = ADC(0)
 adc.read()
 ```
 
-Una vez visto como leer un valor analógico, vamos a pasar a escribir un valor analógico. Esto se realiza gracias al PWM(Pulse With Modulation); se trata de una técnica que nos permite a partir de una serie de valores de alto y bajo (0 o 1)en el tiempo poder calcular un valor analógico. Con el PWM se permite calcular un valor de entre 0 y 1023; ya que también se tiene una precision de 10 bits.
+Una vez visto como leer un valor analógico, vamos a pasar a escribir un valor analógico. Esto se realiza gracias al PWM(Pulse With Modulation); se trata de una técnica que nos permite a partir de una serie de valores de alto y bajo (0 o 1)en el tiempo poder calcular un valor analógico. Con el PWM se permite calcular un valor de entre 0 y 1023; ya que también se tiene una precisión de 10 bits.
 
 Para usar el PWM en micropython, se utilizará la clase ```PWM``` del módulo ```machine```.  En esta clase podemos cambiar el ciclo por segundo (muestras por segundo) y el valor que mostrará por el PWM.
 
-```
+```python
 from machine import PWM, Pin
 
 PWM pwm = PWM(Pin(5))
