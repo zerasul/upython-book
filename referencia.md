@@ -188,11 +188,19 @@ Lee _nbytes_ del bus serie. Si no se le especifica el número de bytes, lee solo
 
 Devuelve los bytes leidos o ```None``` si ha ocurrido un timeout.
 
+```
+uart.read(10)
+```
+
 **readinto(buf,[nbytes])**
 
 Lee e inserta en la variable ```buf``` (buffer), el número de bytes especificado. Si no se especifica, lee ```len(buf)``` bytes.
 
 Devuelve el número de bytes leidos que han sido insertados en ```buf``` o ```None``` si ha habido un timeout.
+
+```
+uart.readinto(buf,10)
+```
 
 **readline()**
 
@@ -200,15 +208,27 @@ Lee todos los bytes del bus hasta encontrar el caracter de fin de línea ```\n``
 
 Devuelve los bytes leidos o ```None``` si ha habido un timeout.
 
+```
+uart.readline()
+```
+
 **write(buf)**
 
 Escribe en el bus serie los bytes contenidos en buf.
 
 Devuelve el número de bytes escritos o ```None``` si ha ocurrido un timeout.
 
+```
+uart.write('123')
+```
+
 **sendbreak()**
 
 Envia una señal de condición break a través del bus serie.
+
+```
+uart.sendbreak()
+```
 
 ### I2C
 
