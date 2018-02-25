@@ -43,4 +43,4 @@ El código fuente que se muestra en este libro tiene licencia GPL-3.0; puede ver
 
 ---
 
-![Licencia de Creative Commons](https://i.creativecommons.org/l/by-sa/4.0/88x31.png) Licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a>.
+![Licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://i.creativecommons.org/l/by-sa/4.0/88x31.png) .

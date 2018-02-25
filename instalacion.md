@@ -4,7 +4,7 @@ Para poder instalar MicroPython, necesitaremos tener instalado Python 3.4 o supe
 
 Para poder instalar anaconda, lo descargaremos de la página oficial https://www.anaconda.com/download/ y lo instalaremos. Una vez instalado, vamos a abrir una terminal para poder utilizar nuestro entorno python. Por ello utilizaremos la herramienta de _Anaconda Navigator_.
 
-![anaconda-navigator](anaconda.png)
+![Figura 2.1 Anaconda Navigator](anaconda.png)
 
 Una vez en la aplicación vamos a la pantalla de _Enviorements_; de manera que podemos crear un entorno de desarrollo, o usar el que viene por defecto. Una vez creado, pulsaremos en el botón de "play" y pulsaremos la opción _open Terminal_.
 
@@ -46,7 +46,7 @@ Una vez borrada la memoria del chip ya podemos flashear la imagen que hemos desc
 esptool.py --chip esp32 --port /dev/ttyUSB1 write_flash -z 0x1000 firmware-ESP32.bin
 ```
 
-![write-flash](write_flash.png)
+![Figura 2.2: Flasheo del chip](write_flash.png)
 
 
 El comando anterior, flashea la imagen correspondiente a la placa con el ESP32 el cual necesita la imagen descargada y se indica que debe empezar por la dirección 0x1000 y el chip corresponde al esp32.
@@ -107,7 +107,7 @@ Seguidamente se establecen algunos atajos de teclado para el comando screen.
 
 Para Sistemas Windows, podemos usar el conocido [Putty](http://www.putty.org); el cual nos descargaremos de su página oficial [http://www.putty.org](http://www.putty.org); y que simplemente configuraremos el puerto COM al que nos conectaremos y la velocidad tras seleccionar la opción de usar conexión serie.
 
-![putty_serial](https://github.com/pythoncanarias/upython/raw/master/imagenes/putty.jpg)
+![Figura 2.3: Programa Putty](https://github.com/pythoncanarias/upython/raw/master/imagenes/putty.jpg)
 
 Una vez conectados, ya tenemos acceso a MicroPython en el cual se nos muestra el Prompt de Python con los característicos ```>>>```.
 
@@ -130,4 +130,4 @@ re-introduce Password:
 
 Una vez configurado, vamos a conectarnos a la siguiente dirección [http://micropython.org/webrepl](http://micropython.org/webrepl); la cual nos muestra una consola para poder conectarnos; sin embargo, tenemos que conectarnos vía WIFI a nuestra ESP8266; por lo que usaremos la wifi que nos crea por defecto ( Si lo hemos cambiado nos conectaremos a dicha wifi) e introducimos la contraseña que por defecto es 'micropythoN'; una vez hecho esto ya podemos usar la consola WebREPL pulsando en el botón _connect_. Nos preguntará la contraseña y nos aparecerá el Prompt de Python ```>>>```.
 
-![webrepl](webrepl.png)
+![Figura 2.4: Web REPL](webrepl.png)

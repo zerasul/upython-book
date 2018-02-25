@@ -39,4 +39,4 @@ Hay que tener en cuenta la placa que usaremos como referencia para este libro en
 Seguidamente mostramos el diagrama de funcionalidades del chip ESP32.
 
 
-![ESP32functionalDiagram](http://esp32.net/images/_resources/ESP32_Function_Block_Diagram.svg)
+![Figura 1: Diagrama del chip ESP32](http://esp32.net/images/_resources/ESP32_Function_Block_Diagram.svg)
