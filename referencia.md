@@ -27,7 +27,7 @@ import machine
 pin0 = machine.Pin(4, machine.Pin.OUT)
 ```
 
-En el código anterior, usamos el pin 4 como salida de forma que podriamos mandar una señal desde el controlador.
+En el código anterior, usamos el pin 4 como salida de forma que podríamos mandar una señal desde el controlador.
 
 ```python
 pin0.on()
@@ -105,7 +105,7 @@ En micropython, para usar la lectura analógica, usaremos la clase ```ADC``` del
 from machine import ADC
 ADC adc = ADC(0)
 ```
-Donde el número 0 indica el número de entrada analógica. Para saber cual usar, consultaremos de nuevo el pinoput.
+Donde el número 0 indica el número de entrada analógica. Para saber cual usar, consultaremos de nuevo el pinout.
 
 Para leer un valor, usaremos la función ```read()```. El cual nos devuelve un valor entre 0 y 1023.
 
@@ -147,7 +147,7 @@ La clase ```UART``` permite comunicación serie a partir de dos cables _RX_ y _T
 
 Para poder utilizar el puerto serie necesitamos saber la velocidad de comunicación; en e siguiente ejemplo vemos como crear un objeto de la clase ```UART```; el cual establecemos a 9600 bps.
 
-El primer número del contructor es el identificador que corresponde al puerto serie que vamos a utilizar. En este caso corresponde el 1 ya que vamos a usar el primer puerto serie. En el chip ESP32, pueden encontrarse varios puertos serie; consulta la documentación del fabricante para saber cual usar.
+El primer número del constructor es el identificador que corresponde al puerto serie que vamos a utilizar. En este caso corresponde el 1 ya que vamos a usar el primer puerto serie. En el chip ESP32, pueden encontrarse varios puertos serie; consulta la documentación del fabricante para saber cual usar.
 
 **NOTA2:** Si tienes un chip ESP8266, solo tiene un puerto serie que corresponde al identificador 1.
 
