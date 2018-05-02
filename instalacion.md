@@ -36,7 +36,7 @@ Una vez descargada la imagen e instalado el driver, pasaremos a borrar la memori
 
 
 ```bash
-$ esptool.py /dev/ttyUSB1 erase_flash
+$ esptool.py --port /dev/ttyUSB1 erase_flash
 ```
 En el comando anterior, tenemos que saber que puerto utilizar en el caso de Linux y MacOsX; pero para sistemas Windows, tenemos que utilizar el puerto COM correspondiente; el cual podemos ver en el administrador de dispositivos.
 
