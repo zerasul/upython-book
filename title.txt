@@ -1,0 +1,9 @@
+---
+title:
+- type: main
+  text:  10 Proyectos con MicroPython y ESP32
+creator:
+- role: author
+  text: Víctor Suárez García
+rights: Creative Commons Non-Commercial Share Alike 4.0
+language: es-ES
